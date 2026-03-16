@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f2f2f2;
+}
+
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 300px;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sidebar p {
+    text-align: center;
+    color: gray;
+}
+
+.social {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social i {
+    margin: 5px;
+    color: #f9a825;
+}
+
+.info p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.bar {
+    margin: 10px 0;
+}
+
+.progress {
+    background: #ddd;
+    height: 6px;
+}
+
+.progress div {
+    background: #f9a825;
+    height: 6px;
+}
+
+.ul_extra {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.ul_extra li {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+
+.cv {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background: #f9a825;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* MAIN */
+
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 40px;
+}
+
+.hero-text h1 {
+    margin: 0;
+}
+
+.hero-text h2 span {
+    color: #f9a825;
+}
+
+.hero-img {
+    width: 250px;
+}
+
+.hire {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #f9a825;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* SERVICES */
+
+.title {
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 16%;
+}
+
+.card i {
+    font-size: 30px;
+    color: #f9a825;
+    margin-bottom: 10px;
+}
+
+.cv {
+    color: black
+}
+
+.cv:hover {
+    color: red;
+}
+
+.hire:hover {
+    color: red;
+}
+
+.typing {
+    color: #f9a825;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: monospace;
+
+    animation: typing 3s steps(12, end) infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0
+    }
+
+    50% {
+        width: 12ch
+    }
+
+    100% {
+        width: 0
+    }
+}
